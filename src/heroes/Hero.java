@@ -1,9 +1,9 @@
 package heroes;
 
-public class Hero {
-    String name;
-    int hp;
-    int mana;
+public abstract class Hero {
+    protected String name;
+    protected int hp;
+    protected int mana;
 
     public abstract void firePrimary ();
     public abstract void fireSecondary ();
