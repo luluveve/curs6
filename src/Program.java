@@ -1,26 +1,25 @@
-import com.sun.org.apache.bcel.internal.generic.ARETURN;
-import com.sun.org.apache.bcel.internal.generic.DRETURN;
-
-import javax.net.ssl.SSLSessionBindingEvent;
-
 public class Program {
     public static void main(String[] args) {
-        Person alex = new Person();
-        alex. name = "Alexandru";
-        alex. age = 20;
-        alex. height = 175;
-        alex.age++;
-        alex.stamina = 10;
+        Person alex = new Person("Alexandru", 20, 175, 10);
 
+Student andrei = new Student ("Andrei", 25, 180,100, "A");
+andrei.grow (10);
+
+if (andrei instanceof Student) {
+    System.out.println(andrei.getName() + "este student");
+}
+
+        System.out.println(andrei.getHeight());
+        System.out.println(andrei.toString());
 
         System.out.println(alex.name + " are energia " + alex.age + " de ani");
 
         alex.run();
         alex.run();
         alex.run();
-        System.out.println(alex.name + " are " + alex.stamina);
+        System.out.println(alex.name + " are energia" + alex.stamina);
         alex.sleep();
-        System.out.println(alex.name + " are " + alex.stamina);
+        System.out.println(alex.name + " are energia" + alex.stamina);
 
         if (alex.isMajor()){
             System.out.println(alex.name + "reinnk bear");
