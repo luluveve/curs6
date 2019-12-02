@@ -1,5 +1,23 @@
 package heroes;
 
-public class Superman {
+public class Superman extends Hero{
 
+
+    @Override
+    public void firePrimary() {
+        mana -= 10;
+        hp++;
+
+    }
+
+    @Override
+    public void fireSecondary() {
+        mana -= 30;
+        hp +=3;
+    }
+
+    @Override
+    public void receiveHit() {
+        hp--;
+    }
 }
