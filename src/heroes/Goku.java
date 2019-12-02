@@ -15,8 +15,7 @@ public class Goku extends Hero {
         mana -=40;
     }
 
-    public Goku() {
-    }
+
 
     @Override
     public void receiveHit() {
