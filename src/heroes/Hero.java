@@ -5,6 +5,12 @@ public abstract class Hero {
     protected int hp;
     protected int mana;
 
+    public Hero(String name, int hp, int mana) {
+        this.name = name;
+        this.hp = hp;
+        this.mana = mana;
+    }
+
     public abstract void firePrimary ();
     public abstract void fireSecondary ();
     public abstract void receiveHit();

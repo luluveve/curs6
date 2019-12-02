@@ -1,6 +1,10 @@
 package heroes;
 
 public class Goku extends Hero {
+    public Goku(String name, int hp, int mana) {
+        super(name, hp, mana);
+    }
+
     @Override
     public void firePrimary() {
         mana -=5;

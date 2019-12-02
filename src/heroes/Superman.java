@@ -3,6 +3,10 @@ package heroes;
 public class Superman extends Hero{
 
 
+    public Superman(String name, int hp, int mana) {
+        super(name, hp, mana);
+    }
+
     @Override
     public void firePrimary() {
         mana -= 10;
